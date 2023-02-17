@@ -69,6 +69,16 @@
         width: 90vw;
     }
 }
+@media screen and (max-width:600px) {
+    .start-free-trial-btn {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .start-free-trial-btn {
+        font-size: .8rem;
+    }
+}
 
 
 
