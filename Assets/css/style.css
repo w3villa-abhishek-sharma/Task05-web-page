@@ -91,6 +91,8 @@
  */
 .top-section {
     background-image: url("https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -164,6 +166,16 @@ header .navigation li a {
     }
 }
 
+@media screen and (max-width:1200px) {
+    .hero h1 {
+        font-size: 2.5rem !important;
+    }
+}
+@media screen and (max-width:900px) {
+    .hero h1 {
+        font-size: 2.2rem !important;
+    }
+}
 @media screen and (max-width:550px) {
     .hero h1 {
         font-size: 2rem !important;
