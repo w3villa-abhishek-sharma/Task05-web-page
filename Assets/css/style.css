@@ -147,10 +147,10 @@ header .navigation li a {
 
     header .navigation.active {
         position: absolute;
-        top: 50px;
+        top: 60px;
         right: 20px;
         display: block;
-        background-color: #ff699d;
+        background-color: #444;
         padding: 15px;
         border-radius: 20px;
         text-align: center;
@@ -187,15 +187,15 @@ header .navigation li a {
         right: 0;
         height: 100%;
         position: fixed;
-        animation: fadeIn 1s;
+        animation: topToBottom 1s;
     }
     
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0.7; }
-    100% { opacity: 1; }
-  }
+@keyframes topToBottom {
+    0% { top: -500px; }
+    100% { top: 60px; }
+}
 
 
 /* 
