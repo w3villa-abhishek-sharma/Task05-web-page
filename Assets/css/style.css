@@ -185,7 +185,7 @@ header .navigation li a {
     header .navigation.active {
         left: 0;
         right: 0;
-        height: 90%;
+        height: 100%;
         position: fixed;
         animation: fadeIn 1s;
     }
