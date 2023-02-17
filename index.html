@@ -30,7 +30,7 @@
             <div class="icon">Achoo <span>BETA</span></div>
           </div>
 
-          <i onclick="handleMenu()" class="fa-solid fa-bars mobile-menu"></i>
+          <i id="mobileMenuIcon" onclick="handleMenu()" class="fa-solid fa-bars mobile-menu"></i>
 
           <ul id="navigation" class="navigation">
             <li><a href="#">Features</a></li>
@@ -199,8 +199,12 @@
             const status = document.getElementById("navigation").classList.contains("active");
             if(status){
                 document.getElementById("navigation").classList.remove("active");
+                document.getElementById("mobileMenuIcon").classList.add("fa-bars")
+                document.getElementById("mobileMenuIcon").classList.remove("fa-xmark")
             }else{
                 document.getElementById("navigation").classList.add("active");
+                document.getElementById("mobileMenuIcon").classList.remove("fa-bars")
+                document.getElementById("mobileMenuIcon").classList.add("fa-xmark")
             }
         }
     </script>
