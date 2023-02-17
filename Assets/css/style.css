@@ -272,8 +272,6 @@ header .navigation li a {
     object-fit: cover;
 }
 
-
-
 @media screen and (max-width:800px) {
     .cards {
         display: block;
@@ -297,6 +295,8 @@ header .navigation li a {
         height: 200px;
     }
 }
+
+
 
 
 /* 
