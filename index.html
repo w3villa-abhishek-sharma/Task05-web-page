@@ -201,10 +201,12 @@
                 document.getElementById("navigation").classList.remove("active");
                 document.getElementById("mobileMenuIcon").classList.add("fa-bars")
                 document.getElementById("mobileMenuIcon").classList.remove("fa-xmark")
+                document.getElementsByTagName('body')[0].style.overflow = "initial"
             }else{
                 document.getElementById("navigation").classList.add("active");
                 document.getElementById("mobileMenuIcon").classList.remove("fa-bars")
                 document.getElementById("mobileMenuIcon").classList.add("fa-xmark")
+                document.getElementsByTagName('body')[0].style.overflow = "hidden"
             }
         }
     </script>
