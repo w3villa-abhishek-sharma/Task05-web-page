@@ -30,9 +30,9 @@
             <div class="icon">Achoo <span>BETA</span></div>
           </div>
 
-          <i class="fa-solid fa-bars mobile-menu"></i>
+          <i onclick="handleMenu()" class="fa-solid fa-bars mobile-menu"></i>
 
-          <ul class="navigation">
+          <ul id="navigation" class="navigation">
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">About</a></li>
@@ -192,5 +192,17 @@
         </div>
       </section>
     </footer>
+
+    <!-- Script -->
+    <script>
+        function handleMenu(){
+            const status = document.getElementById("navigation").classList.contains("active");
+            if(status){
+                document.getElementById("navigation").classList.remove("active");
+            }else{
+                document.getElementById("navigation").classList.add("active");
+            }
+        }
+    </script>
   </body>
 </html>
