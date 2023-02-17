@@ -240,6 +240,8 @@ header .navigation li a{
     object-fit: cover;
 }
 
+
+
 @media screen and (max-width:550px){
     .cards{
         display: block;
@@ -270,16 +272,24 @@ header .navigation li a{
 .bottom-section button{
     background-color: rgb(242, 43, 136);
 }
-@media screen and (max-width:550px){
-    .bottom-section{
-        padding: 60px 0;
+@media screen and (max-width:1150px) {
+    .bottom-section .heading{
+        font-size: 1.1rem;
     }
+}
+@media screen and (max-width:662px) {
     .bottom-section .content{
         display: block;
         text-align: center;
     }
+
     .bottom-section button{
         margin-top: 20px;
+    }
+}
+@media screen and (max-width:550px){
+    .bottom-section{
+        padding: 60px 0;
     }
 }
 
@@ -327,13 +337,23 @@ footer ul .icon{
 footer .copy-right{
     border-top: 1px solid #f1f1f1;
     padding: 50px 10px;
+    align-items: center;
 }
 footer .copy-right .logo{
     font-size: 2.5rem;
     font-weight: 600;
 }
-
-@media screen and (max-width:550px){
+@media screen and (max-width:1300px){
+    footer .footer-content{
+        width: 70vw;
+    }
+}
+@media screen and (max-width:950px){
+    footer .footer-content{
+        width: 100vw;
+    }
+}
+@media screen and (max-width:850px){
     footer .container .content{
         display: block;
     }
